@@ -1,7 +1,7 @@
 # Everything is accessible via the st.secrets dict:
 
-st.write("DB_USERNAME:", st.secrets["myuser"])
-st.write("DB_PASSWORD:", st.secrets["abcdef"])
+st.write("db_username:", st.secrets["nausya"])
+st.write("db_password:", st.secrets["414141"])
 st.write("My cool secrets:", st.secrets["my_cool_secrets"]["things_i_like"])
 
 # And the root-level secrets are also accessible as environment variables:
