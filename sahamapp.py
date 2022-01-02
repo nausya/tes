@@ -45,8 +45,8 @@ else:
 
 # https://technical-analysis-library-in-python.readthedocs.io/en/latest/ta.html#momentum-indicators
 
-df = yf.download(option,start= start_date,end= end_date, progress=False)
-#df = pd.read_csv("orcl.csv",index_col='Date',parse_dates=True,infer_datetime_format=True)
+#df = yf.download(option,start= start_date,end= end_date, progress=False)
+df = pd.read_csv("orcl.csv",index_col='Date',parse_dates=True,infer_datetime_format=True)
 df['Return'] = 100 * (df['Close'].pct_change())
 
 indicator_bb = BollingerBands(df['Close'])
