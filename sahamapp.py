@@ -1,7 +1,7 @@
 # Everything is accessible via the st.secrets dict:
 
-st.write("DB username:", st.secrets["db_username"])
-st.write("DB password:", st.secrets["db_password"])
+st.write("DB username:", st.secrets["myuser"])
+st.write("DB password:", st.secrets["abcdef"])
 st.write("My cool secrets:", st.secrets["my_cool_secrets"]["things_i_like"])
 
 # And the root-level secrets are also accessible as environment variables:
@@ -51,8 +51,8 @@ else:
 
 # https://technical-analysis-library-in-python.readthedocs.io/en/latest/ta.html#momentum-indicators
 
-#df = yf.download(option,start= start_date,end= end_date, progress=False)
-df = pd.read_csv("orcl.csv",index_col='Date',parse_dates=True,infer_datetime_format=True)
+df = yf.download(option,start= start_date,end= end_date, progress=False)
+#df = pd.read_csv("orcl.csv",index_col='Date',parse_dates=True,infer_datetime_format=True)
 df['Return'] = 100 * (df['Close'].pct_change())
 
 indicator_bb = BollingerBands(df['Close'])
