@@ -1,6 +1,6 @@
 # Everything is accessible via the st.secrets dict:
 
-st.write("DB username:", st.secrets["myuser"])
+st.write("db_username:", st.secrets["myuser"])
 st.write("DB password:", st.secrets["abcdef"])
 st.write("My cool secrets:", st.secrets["my_cool_secrets"]["things_i_like"])
 
