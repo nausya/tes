@@ -13,9 +13,9 @@ import pandas as pd
 import numpy as np
 #import matplotlib.pyplot as plt
 #import yfinance as yf # https://pypi.org/project/yfinance/
-from ta.volatility import BollingerBands
-from ta.trend import MACD
-from ta.momentum import RSIIndicator
+#from ta.volatility import BollingerBands
+#from ta.trend import MACD
+#from ta.momentum import RSIIndicator
 
 ##################
 # Set up sidebar #
